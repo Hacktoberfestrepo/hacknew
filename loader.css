@@ -67,4 +67,39 @@ section .loader span::before
 		transform: scale(0);
 	}
 }
-
+/*   button   */
+.btn-color{
+    background: hsl(253, 86%, 53%);
+    color: #fff;
+    font-size:3rem;
+    margin: 2rem 0 2rem 0;
+    }
+.btn-color:hover{
+    color: #fff;
+}
+  @keyframes slide-btn {
+    16.65% {
+         transform: translateY(.8rem);
+    }
+    33.3% {
+          transform: translateY(-.6rem);
+    }
+    49.95% {
+      transform: translateY(.4rem);
+    }
+    66.6% {
+      transform: translateY(-.2rem);
+    }
+    83.25% {
+      transform: translateY(.1rem);
+    }
+    100% {
+    transform: translateY(0);
+    }
+  }
+  .slide-btn:hover, .slide-btn:focus, .slide-btn:active {
+    animation-name: slide-btn;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+  }
